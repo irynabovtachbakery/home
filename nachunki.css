@@ -18,6 +18,38 @@ p{
 _______________________*/
 
 
+
+.to-up{
+    margin-bottom: 100px;
+    bottom: 0;
+    margin-right: 100px;
+    right: 0;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    z-index: 100;
+
+    animation-name: to-up-animation;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+@keyframes to-up-animation{
+    0%{
+        margin-bottom: 100px ;
+    }
+    100%{
+        margin-bottom: 125px;
+    }
+}
+
+.to-up:hover.to-up{
+    animation-play-state: paused;
+}
+
+
 .main-h1{
     margin-top: 40px;
     text-transform: uppercase;
@@ -1054,57 +1086,123 @@ _______________________*/
 
 
 .contacts{
+    justify-content: space-evenly;
+    display: flex;
+    padding-left: 110px;
+    padding-right: 110px;
     align-content: center;
-    padding-top: 25px;
+    padding-top: 45px;
     box-sizing: border-box;
     height: 400px;
     background-color: #484f5b;
 }
-.social-wrapper{
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+.tab1{
+    text-align: left;
+}
+.tab1-h2{
+    width: 290px;
+    color: white;
+    font-size: 17px;
+}
+.tab1-p{
+    width: 290px;
+    color: white;
+    font-size: 17px;
+    margin-top: 25px;
+}
+.tab1-href{
+    cursor: pointer;
+    text-decoration: underline;
     height: 40px;
-    width: 100px;
-    justify-content: space-between;
-    
+    width: 290px;
+    color: white;
+    font-size: 17px;
+    margin-top: 60px;
 }
-.facebook{
-    width: 40px;
+.tab1-href:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    height: 40px;
+    width: 290px;
+    color: #555453;
+    font-size: 17px;
+    margin-top: 60px;
 }
-.instagram{
-    width: 40px;
+#tel{
+    cursor: pointer;
+    text-decoration: underline;
+    height: 40px;
+    width: 290px;
+    color: white;
+    font-size: 17px;
+    margin-top: 60px;
 }
-.contacts-h1{
-    color: #c9ccd0;
-    text-align: center;
-    width: 100%;
-    transition: 1s;
-    font-size: 24px;
-}
-.call-wrapper{
-    margin-top: 40px;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.call:hover{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    text-decoration: none;
-    color: #242629;
-    font-size: 20px;
-}
-.call{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    text-decoration: none;
-    color: #c9ccd0;
-    font-size: 20px;
+#tel:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    height: 40px;
+    width: 290px;
+    color: #555453;
+    font-size: 17px;
+    margin-top: 60px;
 }
 
+
+
+
+
+
+
+.tab2{
+    text-align: left;
+}
+.tab2-h2{
+    width: 290px;
+    color: white;
+    font-size: 17px;
+}
+.tab2-p{
+    cursor: pointer;
+    text-decoration: underline;
+    width: 100px;
+    color: white;
+    font-size: 17px;
+    margin-top: 25px;
+}
+.tab2-p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    width: 100px;
+    color: #555453;
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+
+
+.tab3{
+    text-align: left;
+}
+
+.tab3-p{
+    width: 300px;
+    color: white;
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+.social-media{
+    margin-top: 15px;
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.facebook{
+    cursor: pointer;
+}
+.instagram{
+    cursor: pointer;
+}
 
 
 
