@@ -15,6 +15,39 @@ p{
 
 /*HEADER_________________
 _______________________*/
+
+
+.to-up{
+    margin-bottom: 100px;
+    bottom: 0;
+    margin-right: 100px;
+    right: 0;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    z-index: 100;
+
+    animation-name: to-up-animation;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+@keyframes to-up-animation{
+    0%{
+        margin-bottom: 100px ;
+    }
+    100%{
+        margin-bottom: 125px;
+    }
+}
+
+.to-up:hover.to-up{
+    animation-play-state: paused;
+}
+
+
 .header-wrapper{
     height: 80px;
     width: 100%;
@@ -833,7 +866,24 @@ _______________________*/
     font-size: 17px;
     margin-top: 60px;
 }
-
+#tel{
+    cursor: pointer;
+    text-decoration: underline;
+    height: 40px;
+    width: 290px;
+    color: white;
+    font-size: 17px;
+    margin-top: 60px;
+}
+#tel:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    height: 40px;
+    width: 290px;
+    color: #555453;
+    font-size: 17px;
+    margin-top: 60px;
+}
 
 
 
@@ -852,7 +902,7 @@ _______________________*/
 .tab2-p{
     cursor: pointer;
     text-decoration: underline;
-    width: 290px;
+    width: 100px;
     color: white;
     font-size: 17px;
     margin-top: 25px;
@@ -860,7 +910,7 @@ _______________________*/
 .tab2-p:hover{
     cursor: pointer;
     text-decoration: underline;
-    width: 290px;
+    width: 100px;
     color: #555453;
     font-size: 17px;
     margin-top: 25px;
