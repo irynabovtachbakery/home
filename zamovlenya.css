@@ -179,7 +179,7 @@ _______________________*/
     align-items: center;
     margin-top: 100px;
     width: 100%;
-    height: 1500px;
+    height: 1200px;
 }
 .call-or-direct{
     background-color: #ece1de;
@@ -195,13 +195,13 @@ _______________________*/
     text-decoration: none;
     font-weight: 700;
     color: #484f5b;
-    font-size: 19px;
+    font-size: 17px;
 }
 .call-href:hover{
     text-decoration: none;
     font-weight: 700;
     color: #34383f;
-    font-size: 19px;
+    font-size: 17px;
 }
 
 .call-p1{
@@ -209,25 +209,66 @@ _______________________*/
     text-decoration: none;
     font-weight: 700;
     color: #484f5b;
-    font-size: 19px;
+    font-size: 17px;
 }
 .call-p2{
     margin-top: 26px;
     text-decoration: none;
     font-weight: 700;
     color: #484f5b;
-    font-size: 19px;
+    font-size: 17px;
 }
 .or{
     font-size: 34px;
     color: #484f5b;
     margin-top: 75px;
 }
+.form-wrapper{
+    margin-top: 75px;
+    justify-content: space-evenly;
+    background-color: #ece1de;
+    border-radius: 10%;
+    box-sizing: border-box;
+    padding-top: 60px;
+    text-align: center;
+    box-shadow: 2px 4px 30px #000;
+    height: 540px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.form{
+padding-left: 15px;
+    margin-top: 25px;
+    border: 1px solid #555453;
+    width: 300px;
+    height: 35px;
+}
 
+.form::placeholder{
+    font-size: 17px;
+}
+.form-submit{
+    background-color: #484f5b;
+    border: none;
+    font-weight: 700;
+    color: #ece1de;
+    text-transform: uppercase;
+    font-size: 19px;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    transition: 0.2s;
+}
 
-
-
-
+.form-submit:hover{
+    width: 210px;
+    height: 60px;
+    transition: 0.2s;
+}
+.form-h1{
+    color: #484f5b;
+}
 
 
 
@@ -377,3 +418,130 @@ _______________________*/
 .instagram{
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SHAPES_________________
+_______________________*/
+
+
+
+.shape-about-me1{
+    position: relative;
+}
+.shape-about-me2{
+    margin-left: 385px;
+    margin-top: 370px;
+    position: relative;
+}
+.shape-about-me3{
+    position: relative;
+    width: 200px;
+    height: 80px;
+    margin-top: 40px;
+}
+.about-me-shapes1{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.floral-about-me1{
+    height: 131px;
+    position: relative;
+}
+.floral-about-me2{
+    margin-top: 365px;
+    margin-left: 180px;
+    position: relative;
+}
+.floral-about-me3{
+    margin-top: 30px;
+    margin-right: 40px;
+    height: 154px;
+    position: relative;
+}
+.about-me-florals1{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+.shape-about-me4{
+    position: relative;
+}
+.shape-about-me6{
+    position: relative;
+}
+
+.about-me-shapes2{
+    margin-top: -207px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.floral-about-me4{
+    height: 116px;
+    position: relative;
+}
+.floral-about-me5{
+    margin-left: 545px;
+    height: 93px;
+    position: relative;
+}
+.shape-about-me5{
+    margin-right: 150px;
+    height: 181px;
+    position: relative;
+}
+
+.about-me-florals2{
+    margin-top: -192px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-me-shapes2{
+    margin-top: 735px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+#about-me-florals2{
+    margin-top: 735px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+

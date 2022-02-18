@@ -1,14 +1,14 @@
 const domain = document.querySelector('.tab1-href');
 
 domain.addEventListener('click', function(){
-    document.location.href = "https://bakeryiryna.github.io/home"
+    document.location.href = "https://irynabovtachbakery.github.io/home/"
 })
 
 const tab2 = document.querySelector('.tab2');
 const tab2Hrefs = tab2.children;
 
 tab2Hrefs[1].addEventListener('click', function(){
-    document.location.href = "https://bakeryiryna.github.io/home"
+    document.location.href = "https://irynabovtachbakery.github.io/home/"
 });
 
 tab2Hrefs[2].addEventListener('click', function(){
@@ -39,5 +39,13 @@ instagram.addEventListener('click', function(){
     let url = "https://www.instagram.com/iryna_bovtach_bakery/";
 
     window.open(url,'_blank')
+
+})
+
+const toUp = document.querySelector('.to-up');
+toUp.addEventListener('click', function(){
+    if(window.scrollY >= 0){
+        window.scrollTo(0, 0)
+    }
 
 })
