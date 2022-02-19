@@ -1009,6 +1009,7 @@ _______________________*/
     }
     .start-wrapper.active{
         transition: 0s;
+        padding: 0;
         height: 2900px;
     }
     .start-text-wrapper{
@@ -1032,6 +1033,7 @@ _______________________*/
         width: 900px;
         padding-left: 135px;
         padding-right: 135px;
+        margin-left: 100px;
         font-size: 36px;
     }
     .p-start2{
@@ -1368,32 +1370,163 @@ _______________________*/
     height: 145px;
 }
 
+.about-cake {
+    height: 3744px;
+    width: 1360px;
+    align-items: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e5e3e1;
+}
+.about-cake.active {
+    height: 6000px;
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e5e3e1;
+}
+
+.cake-about {
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 4px 50px #000;
+    width: 820px;
+    height: 1230px;
+}
+
+.about-cake-h1 {
+    width: 665px;
+    font-size: 42px;
+}
+.about-cake-p1 {
+    width: 1060px;
+    font-size: 36px;
+}
+.about-cake-p2.active {
+    transition: 0s;
+    width: 1060px;
+    font-size: 36px;
+}
+.about-cake-p2{
+    transition: 0s;
+}
+.about-cake-text-wrapper {
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 900px;
+    height: 2000px;
+    color: #484f5b;
+    line-height: 1.3;
+    text-align: left;
+}
+.about-cake-text-wrapper.active {
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 900px;
+    height: 2000px;
+    color: #484f5b;
+    line-height: 1.3;
+    text-align: left;
+}
+
+
+.about-cake-btn {
+    transition:0s;
+    z-index: 5;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #484f5b;
+    width: 365px;
+    height: 103px;
+    font-size: 32px;
+    text-transform: uppercase;
+    background-color: #e6c8c3;
+    border: none;
+}
+.about-cake-btn.clicked {
+    transition:0s;
+    z-index: 5;
+    margin-top: 773px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #484f5b;
+    width: 365px;
+    height: 103px;
+    font-size: 32px;
+    text-transform: uppercase;
+    background-color: #e6c8c3;
+    border: none;
+}
+.about-cake-btn:hover {
+    transition:0s;
+    z-index: 5;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #484f5b;
+    width: 365px;
+    height: 103px;
+    font-size: 32px;
+    text-transform: uppercase;
+    background-color: #e6c8c3;
+    border: none;
+}
+.about-cake-btn.clicked:hover    {
+    transition:0s;
+    z-index: 5;
+    margin-top: 773px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #484f5b;
+    width: 365px;
+    height: 103px;
+    font-size: 32px;
+    text-transform: uppercase;
+    background-color: #e6c8c3;
+    border: none;
+}
 
 
 
+.contacts{
+    width: 1360px;
+}
 
 
 
+.tab1-p {
+    width: 290px;
+    color: white;
+    font-size: 21px;
+    margin-top: 25px;
+}
+.tab1-href {
+font-size: 21px;
+}
+.tab2-p{
+    font-size: 21px;
+}
 
+.tab3-p{
+    font-size: 21px;
+    width: 363px;
+}
+.facebook{
+    width: 90px;
+    height: 90px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.instagram{
+    width: 90px;
+    height: 90px;
+}
 
 
 
