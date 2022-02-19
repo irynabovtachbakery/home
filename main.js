@@ -161,3 +161,32 @@ toUp.addEventListener('click', function(){
     }
 
 })
+
+
+
+/*MEDIA__________________________________________________________________*/
+
+
+
+  const mediaQuery = window.matchMedia('(max-width: 768px)')
+  if (mediaQuery.matches) {
+    let offset1 = 0;
+    const sliderLine = document.querySelector('.about-me-slider-line');
+    
+    document.querySelector('.about-me-slider-btn-next').addEventListener('click', function(){
+        offset1 = offset1 + 820;
+        if(offset1 > 3280){
+            offset1 = 0
+        }
+        sliderLine.style.left = -offset1 + 'px';
+    
+    });
+    
+    document.querySelector('.about-me-slider-btn-prev').addEventListener('click', function(){
+        offset1 = offset1 - 820;
+        if(offset1 < 0){
+            offset1 = 3280;
+        }
+        sliderLine.style.left = -offset1 + 'px';
+    });
+  }
