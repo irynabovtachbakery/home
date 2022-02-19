@@ -189,4 +189,50 @@ toUp.addEventListener('click', function(){
         }
         sliderLine.style.left = -offset1 + 'px';
     });
+
+
+
+
+
+
+
+    let offset2 = 0;
+    const sliderLine2 = document.querySelector('.how-to-order-slider-line');
+    
+    document.querySelector('.how-to-order-btn-next').addEventListener('click', function(){
+        offset2 = offset2 + 820;
+        if(offset2 > 1640){
+            offset2 = 0
+        }
+        sliderLine2.style.left = -offset2 + 'px';
+    
+    });
+    
+    document.querySelector('.how-to-order-btn-prev').addEventListener('click', function(){
+        offset2 = offset2 - 820;
+        if(offset2 < 0){
+            offset2 = 1640;
+        }
+        sliderLine2.style.left = -offset2 + 'px';
+    });
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
