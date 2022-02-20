@@ -215,24 +215,30 @@ toUp.addEventListener('click', function(){
         }
         sliderLine2.style.left = -offset2 + 'px';
     });
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   }
+
+
+
+
+
+
+
+
+  const menuIcon = document.querySelector('.menu-icon');
+
+  menuIcon.addEventListener('click', function openMenu(){
+    document.querySelector('.mobile-modal').classList.toggle('active');
+
+    document.body.classList.toggle('active');
+    
+    menuIcon.classList.toggle('active');
+
+
+
+      
+      
+
+      
+  })
+
