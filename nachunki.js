@@ -297,3 +297,26 @@ toUp.addEventListener('click', function(){
     }
 
 })
+
+
+
+
+
+
+
+const menuIcon = document.querySelector('.menu-icon');
+
+menuIcon.addEventListener('click', function openMenu(){
+  document.querySelector('.mobile-modal').classList.toggle('active');
+
+  document.body.classList.toggle('active');
+  
+  menuIcon.classList.toggle('active');
+
+
+
+    
+    
+
+    
+})
