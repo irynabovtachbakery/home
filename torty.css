@@ -14,7 +14,18 @@ p{
 }
 /*HEADER_________________
 _______________________*/
-
+.mobile-wrapper{
+    visibility: hidden;
+    height: 0px;
+}
+.mobile-modal{
+    visibility: hidden;
+    height: 0px;
+}
+.mobile-header{
+    visibility: hidden;
+    height: 0px;
+}
 .to-up{
     margin-bottom: 100px;
     bottom: 0;
@@ -2204,3 +2215,303 @@ _______________________*/
 .instagram{
     cursor: pointer;
 }
+
+
+
+
+@media (max-width: 1200px){
+    body{
+        max-width: 970px;
+    }
+}
+@media (max-width: 992px){
+    body{
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px){
+    body{
+        max-width: 1360px;
+        
+
+    }
+    .container{
+        width: 1360px;
+        max-width: 1360px;
+    }
+    .header{
+        display: none;
+    }
+    .header-wrapper{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .contacts{
+        width: 1360px;
+    }
+    
+    
+    
+    .tab1-p {
+        width: 290px;
+        color: white;
+        font-size: 21px;
+        margin-top: 25px;
+    }
+    .tab1-href {
+    font-size: 21px;
+    }
+    .tab2-p{
+        font-size: 21px;
+    }
+    
+    .tab3-p{
+        font-size: 21px;
+        width: 363px;
+    }
+    .facebook{
+        width: 90px;
+        height: 90px;
+    }
+    
+    .instagram{
+        width: 90px;
+        height: 90px;
+    }
+    
+    
+    .to-up{
+        width: 230px;
+        height: 230px;
+    }
+    
+    .mobile-header{
+        box-shadow: 2px 4px 40px #000;
+        z-index: 9;
+        position: fixed;
+        box-sizing: border-box;
+        padding-right: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        color: #484f5b;
+        text-align: center;
+        font-size: 38px;
+        visibility: visible;
+        background-color: #e5e3e1;
+        width: 1360px;
+        height: 200px;
+    }
+    .mobile{
+        color: #484f5b;
+    }
+    .menu-icon{
+        transition: 0.3s;
+        width: 150px;
+        height: 150px;
+    }
+    .menu-icon.active{
+        transition: 0.3s;
+        transform: rotate(90deg);
+        width: 150px;
+        height: 150px;
+    }
+    .mobile-modal{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-top: 250px;
+        padding-left: 80px;
+        visibility: hidden;
+        height: 1200px;
+        position: fixed;
+        z-index: 8;
+        width: 1360px;
+        background-color: #555453;
+        box-shadow: 2px 4px 40px #000;
+    }
+    .mobile-modal.active{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-top: 250px;
+        padding-left: 80px;
+        visibility: visible;
+        height: 1200px;
+        position: fixed;
+        z-index: 8;
+        width: 1360px;
+        background-color: #555453;
+        box-shadow: 2px 4px 40px #000;
+    }
+    .mobile-wrapper{
+        width: 1360px;
+        height: 200px;
+    }
+    .mobile-1{
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+        font-size: 80px;
+    }
+    
+    .nav1-icon{
+        width: 100px;
+        filter: invert(1);
+    }
+    
+    .mobile-2{
+        margin-top: 100px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+        font-size: 80px;
+    }
+    
+    .nav2-icon{
+        width: 100px;
+        filter: invert(1);
+    }
+    .mobile-3{
+        margin-top: 100px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+        font-size: 80px;
+    }
+    
+    .nav3-icon{
+        width: 100px;
+        filter: invert(1);
+    }
+    .mobile-4{
+        margin-top: 100px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+        font-size: 80px;
+    }
+    
+    .nav4-icon{
+        width: 100px;
+        filter: invert(1);
+    }
+    
+    
+    
+    .about-me-shapes1 {
+        width: 1360px;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+    }
+    .about-me-florals1 {
+        width: 1360px;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+    }
+    .about-me-shapes2 {
+        width: 1360px;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+    }
+    .about-me-florals2 {
+        width: 1360px;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+
+
+
