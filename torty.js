@@ -1565,3 +1565,351 @@ menuIcon.addEventListener('click', function openMenu(){
 
     
 })
+
+
+
+/*MEDIA__________________________________________________________________*/
+
+
+
+const mediaQuery = window.matchMedia('(max-width: 768px)')
+if (mediaQuery.matches) {
+
+    /*CUPCAKES__________________________________________________________________________*/
+
+  const sliderLine1 = document.querySelector('.cupcakes-slider-line');
+  let offset1 = 0;
+  const next1 = document.querySelector('.cupcakes-next');
+  const prev1 = document.querySelector('.cupcakes-prev');
+  const cupcakeDots = document.querySelector('.cupcakes-dots');
+  const cupcakeDotsChildren = cupcakeDots.children;
+  
+  document.querySelector('.cupcakes-next').addEventListener('click', function(){
+      offset1 = offset1 + 820 ;
+  
+      if (offset1 > 2460){
+          offset1 = 0
+      }    
+  
+      sliderLine1.style.left = -offset1 + 'px';
+  });
+  
+  
+  document.querySelector('.cupcakes-prev').addEventListener('click', function(){
+      offset1 = offset1 - 820 ;
+  
+      if (offset1 < 0){
+          offset1 = 2460
+      }    
+      
+      sliderLine1.style.left = -offset1 + 'px';
+  });
+  
+  
+    /*TOY-CAKES__________________________________________________________________________*/
+
+  const sliderLine2 = document.querySelector('.toy-slider-line');
+  let offset2 = 0;
+  const next2 = document.querySelector('.toy-next');
+  const prev2 = document.querySelector('.toy-prev');
+  const toyDots = document.querySelector('.toy-dots');
+  const toyDotsChildren = toyDots.children;
+  
+  document.querySelector('.toy-next').addEventListener('click', function(){
+      offset2 = offset2 + 820 ;
+  
+      if (offset2 > 4100){
+          offset2 = 0
+      }    
+  
+      sliderLine2.style.left = -offset2 + 'px';
+  });
+  
+  
+  document.querySelector('.toy-prev').addEventListener('click', function(){
+      offset2 = offset2 - 820 ;
+  
+      if (offset2 < 0){
+          offset2 = 4100
+      }    
+      
+      sliderLine2.style.left = -offset2 + 'px';
+  });
+  
+  
+/*GIRL-CAKES__________________________________________________________________________*/
+
+
+const sliderLine3 = document.querySelector('.girl-cake-slider-line');
+let offset3 = 0;
+const next3 = document.querySelector('.girl-cake-next');
+const prev3 = document.querySelector('.girl-cake-prev');
+const girlDots = document.querySelector('.girl-dots');
+const girlDotsChildren = girlDots.children;
+
+document.querySelector('.girl-cake-next').addEventListener('click', function(){
+    offset3 = offset3 + 820 ;
+
+    if (offset3 > 4100){
+        offset3 = 0
+    }    
+
+    sliderLine3.style.left = -offset3 + 'px';
+});
+
+
+document.querySelector('.girl-cake-prev').addEventListener('click', function(){
+    offset3 = offset3 - 820 ;
+
+    if (offset3 < 0){
+        offset3 = 4100
+    }    
+    
+    sliderLine3.style.left = -offset3 + 'px';
+});
+
+/*MANS1*/
+
+
+const sliderLine6 = document.querySelector('.man-slider1-line');
+let offset6 = 0;
+const next6 = document.querySelector('.man1-next');
+const prev6 = document.querySelector('.man1-prev');
+const man1Dots = document.querySelector('.man1-dots');
+const man1DotsChildren = man1Dots.children;
+
+document.querySelector('.man1-next').addEventListener('click', function(){
+    offset6 = offset6 + 820 ;
+
+    if (offset6 > 3280){
+        offset6 = 0
+    }    
+
+    sliderLine6.style.left = -offset6 + 'px';
+});
+
+
+document.querySelector('.man1-prev').addEventListener('click', function(){
+    offset6 = offset6 - 820 ;
+
+    if (offset6 < 0){
+        offset6 = 3280
+    }    
+    
+    sliderLine6.style.left = -offset6 + 'px';
+});
+
+/*MANS2*/
+
+
+const sliderLine7 = document.querySelector('.man-slider2-line');
+let offset7 = 0;
+const next7 = document.querySelector('.man2-next');
+const prev7 = document.querySelector('.man2-prev');
+const man2Dots = document.querySelector('.man2-dots');
+const man2DotsChildren = man2Dots.children;
+
+document.querySelector('.man2-next').addEventListener('click', function(){
+    offset7 = offset7 + 820 ;
+
+    if (offset7 > 3280){
+        offset7 = 0
+    }    
+
+    sliderLine7.style.left = -offset7 + 'px';
+});
+
+
+document.querySelector('.man2-prev').addEventListener('click', function(){
+    offset7 = offset7 - 820 ;
+
+    if (offset7 < 0){
+        offset7 = 3280
+    }    
+    
+    sliderLine7.style.left = -offset7 + 'px';
+});
+
+
+
+/*WEDDING*/
+
+
+const sliderLine8 = document.querySelector('.wedding-slider-line');
+let offset8 = 0;
+const next8 = document.querySelector('.wedding-next');
+const prev8 = document.querySelector('.wedding-prev');
+const weddingDots = document.querySelector('.wedding-dots');
+const weddingDotsChildren = weddingDots.children;
+
+document.querySelector('.wedding-next').addEventListener('click', function(){
+    offset8 = offset8 + 820 ;
+
+    if (offset8 > 1640){
+        offset8 = 0
+    }    
+
+    sliderLine8.style.left = -offset8 + 'px';
+});
+
+
+document.querySelector('.wedding-prev').addEventListener('click', function(){
+    offset8 = offset8 - 820 ;
+
+    if (offset8 < 0){
+        offset8 = 1640
+    }    
+    
+    sliderLine8.style.left = -offset8 + 'px';
+});
+
+
+
+
+/*DIFFERENT1*/
+
+
+const sliderLine9 = document.querySelector('.different1-slider-line');
+let offset9 = 0;
+const next9 = document.querySelector('.different1-next');
+const prev9 = document.querySelector('.different1-prev');
+const different1Dots = document.querySelector('.different1-dots');
+const different1DotsChildren = different1Dots.children;
+
+document.querySelector('.different1-next').addEventListener('click', function(){
+    offset9 = offset9 + 820 ;
+
+    if (offset9 > 3280){
+        offset9 = 0
+    }    
+
+    sliderLine9.style.left = -offset9 + 'px';
+});
+
+
+document.querySelector('.different1-prev').addEventListener('click', function(){
+    offset9 = offset9 - 820 ;
+
+    if (offset9 < 0){
+        offset9 = 3280
+    }    
+    
+    sliderLine9.style.left = -offset9 + 'px';
+});
+
+
+/*DIFFERENT2*/
+
+
+const sliderLine10 = document.querySelector('.different2-slider-line');
+let offset10 = 0;
+const next10 = document.querySelector('.different2-next');
+const prev10 = document.querySelector('.different2-prev');
+const different2gDots = document.querySelector('.different2-dots');
+const different2DotsChildren = different2gDots.children;
+
+document.querySelector('.different2-next').addEventListener('click', function(){
+    offset10 = offset10 + 820 ;
+
+    if (offset10 > 1640){
+        offset10 = 0
+    }    
+
+    sliderLine10.style.left = -offset10 + 'px';
+});
+
+
+document.querySelector('.different2-prev').addEventListener('click', function(){
+    offset10 = offset10 - 820 ;
+
+    if (offset10 < 0){
+        offset10 = 1640
+    }    
+    
+    sliderLine10.style.left = -offset10 + 'px';
+});
+
+
+
+/*PARTY1*/
+
+
+const sliderLine12 = document.querySelector('.party1-slider-line');
+let offset12 = 0;
+const next12 = document.querySelector('.party1-next');
+const prev12 = document.querySelector('.party1-prev');
+const party1Dots = document.querySelector('.party1-dots');
+const party1tDotsChildren = party1Dots.children;
+
+document.querySelector('.party1-next').addEventListener('click', function(){
+    offset12 = offset12 + 820 ;
+
+    if (offset12 > 3280){
+        offset12 = 0
+    }    
+
+    sliderLine12.style.left = -offset12 + 'px';
+});
+
+
+document.querySelector('.party1-prev').addEventListener('click', function(){
+    offset12 = offset12 - 820 ;
+
+    if (offset12 < 0){
+        offset12 = 3280
+    }    
+    
+    sliderLine12.style.left = -offset12 + 'px';
+});
+
+
+/*PARTY2*/
+
+
+const sliderLine13 = document.querySelector('.party2-slider-line');
+let offset13 = 0;
+const next13 = document.querySelector('.party2-next');
+const prev13 = document.querySelector('.party2-prev');
+const party2Dots = document.querySelector('.party2-dots');
+const party2tDotsChildren = party2Dots.children;
+
+document.querySelector('.party2-next').addEventListener('click', function(){
+    offset13 = offset13 + 820 ;
+
+    if (offset13 > 3280){
+        offset13 = 0
+    }    
+
+    sliderLine13.style.left = -offset13 + 'px';
+});
+
+
+document.querySelector('.party2-prev').addEventListener('click', function(){
+    offset13 = offset13 - 820 ;
+
+    if (offset13 < 0){
+        offset13 = 3280
+    }    
+    
+    sliderLine13.style.left = -offset13 + 'px';
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
