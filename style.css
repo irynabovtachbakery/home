@@ -19,6 +19,8 @@ p{
     margin: 0 0 10px;
 }
 
+yarn add smoothscroll-polyfill
+
 /*HEADER_________________
 _______________________*/
 .mobile-wrapper{
