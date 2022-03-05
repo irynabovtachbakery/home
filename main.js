@@ -19,11 +19,6 @@ function SVS_B(eAmt, where) {
 
 
 
-
-
-
-
-
 //DETAILS-TEXT_______________________________________
 
 const btnDetailStart = document.querySelector('.start-btn');
