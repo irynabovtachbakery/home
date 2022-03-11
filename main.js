@@ -1,20 +1,33 @@
-function SmoothVerticalScrolling(e, time, where) {
-    var eTop = e.getBoundingClientRect().top;
-    var eAmt = eTop / 100;
-    var curTime = 0;
-    while (curTime <= time) {
-        window.setTimeout(SVS_B, curTime, eAmt, where);
-        curTime += time / 100;
+var reducedMotionQuery = false;
+var scrollBehavior = "smooth";
+
+
+if (!(document.documentMode)) {
+    if (typeof window.matchMedia === "function") {
+        reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    }
+
+    // Check if the media query matches or is not available.
+    if (!reducedMotionQuery || reducedMotionQuery.matches) {
+        scrollBehavior = "auto";
     }
 }
 
-function SVS_B(eAmt, where) {
-    if(where == "center" || where == "")
-        window.scrollBy(0, eAmt / 2);
-    if (where == "top")
-        window.scrollBy(0, eAmt);
-}
 
+
+
+const toUp = document.querySelector('.to-up');
+toUp.addEventListener('click', function(){
+    if(window.scrollY >= 0){
+        window.scroll({
+            top:  mediaQuery,
+            left: 0,
+            behavior: scrollBehavior
+        });
+        
+    }
+
+})
 
 
 
@@ -174,14 +187,6 @@ instagram.addEventListener('click', function(){
 })
 
 
-
-const toUp = document.querySelector('.to-up');
-toUp.addEventListener('click', function(){
-    if(window.scrollY >= 0){
-        window.scroll(0, 0)
-    }
-
-})
 
 
 

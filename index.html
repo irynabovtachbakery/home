@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <script  src =" https://unpkg.com/smoothscroll-anchor-polyfill "> </script>
+    <!-- We include the API -->
+    <script src = "https://cdn.jsdelivr.net/npm/universalsmoothscroll@latest/universalsmoothscroll-min.js"></script>
+    <!-- We include the API's easing library (this is optional) -->
+    <script>
+      if (!('scrollBehavior' in document.documentElement.style)) {
+          var js = document.createElement('script');
+          js.src = "https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js";
+          document.head.appendChild(js);
+      }
+  </script>
    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
