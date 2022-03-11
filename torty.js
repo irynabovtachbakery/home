@@ -1,10 +1,19 @@
 
-/*
-document.addEventListener("DOMContentLoaded", function(){
-    alert('Ви можете переглядати фото натискаючи на стрілки!')
-})
-*/
+var reducedMotionQuery = false;
+var scrollBehavior = "smooth";
 
+
+
+if (!(document.documentMode)) {
+    if (typeof window.matchMedia === "function") {
+        reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    }
+
+    // Check if the media query matches or is not available.
+    if (!reducedMotionQuery || reducedMotionQuery.matches) {
+        scrollBehavior = "auto";
+    }
+}
 
 
 
@@ -12,7 +21,12 @@ document.addEventListener("DOMContentLoaded", function(){
 const toUp = document.querySelector('.to-up');
 toUp.addEventListener('click', function(){
     if(window.scrollY >= 0){
-        window.scrollTo(0, 0)
+        window.scroll({
+            top:  mediaQuery,
+            left: 0,
+            behavior: scrollBehavior
+        });
+        
     }
 
 })
